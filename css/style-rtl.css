@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
   margin: 0;
@@ -101,8 +101,8 @@ html {
   cursor: pointer;
   display: none;
 }
-.en{
-    font-family: "Ubuntu", sans-serif;
+.en {
+  font-family: "Ubuntu", sans-serif;
 }
 .scroll-up-btn {
   position: fixed;
@@ -1019,6 +1019,37 @@ section .title::after {
   }
   .navbar.sticky .menu li a:hover {
     color: #30bcff;
+  }
+}
+
+@media (max-height: 550px) {
+  .navbar .menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .normal.a {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .normal.b {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .normal.c {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .normal.d {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .normal.e {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .normal.f {
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .normal.g {
+    grid-area: 3 / 3 / 4 / 4;
   }
 }
 
