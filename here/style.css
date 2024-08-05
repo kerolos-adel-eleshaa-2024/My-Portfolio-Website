@@ -14,6 +14,11 @@ body {
   justify-content: center;
   background-color: #111;
 }
+
+path{
+    color: #30bcff;
+}
+
 .profile-card {
   display: flex;
   flex-direction: column;
