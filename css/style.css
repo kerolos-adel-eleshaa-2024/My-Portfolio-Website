@@ -8,20 +8,16 @@
 }
 ::-webkit-scrollbar {
   width: 10px;
-  border-radius: 50px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb {
   background: #30bcff;
-  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0c7aac;
-  border-radius: 50px;
 }
 
 html {
@@ -33,8 +29,8 @@ html {
   margin: auto;
 }
 
-path{
-    color: #30bcff;
+path {
+  color: #30bcff;
 }
 
 .navbar {
@@ -589,7 +585,7 @@ section .title::after {
 
 /* projects section styling */
 .projects .title::after {
-    content: "Examples";
+  content: "Examples";
 }
 
 .projects .carousel .card {
@@ -715,12 +711,21 @@ section .title::after {
 .contact .right form .email {
   margin-left: 10px;
 }
-.contact .right form .field input,
-.contact .right form .textarea textarea {
+.contact .right form .field input {
   height: 100%;
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 50px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.contact .right form .textarea textarea {
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
   outline: none;
   padding: 0 15px;
   font-size: 17px;
@@ -934,7 +939,6 @@ section .title::after {
   }
 }
 
-
 @media (max-width: 947px) {
   .menu-btn {
     display: block;
@@ -1017,21 +1021,35 @@ section .title::after {
   }
 }
 
-@media (max-height: 550px){
-    .navbar .menu {
+@media (max-height: 550px) {
+  .navbar .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-   }
-    .normal.a { grid-area: 1 / 2 / 2 / 3; }
-    .normal.b { grid-area: 1 / 4 / 2 / 5; }
-    .normal.c { grid-area: 2 / 2 / 3 / 3; }
-    .normal.d { grid-area: 2 / 4 / 3 / 5; }
-    .normal.e { grid-area: 3 / 2 / 4 / 3; }
-    .normal.f { grid-area: 3 / 4 / 4 / 5; }
-    .normal.g { grid-area: 3 / 3 / 4 / 4; }
+  }
+  .normal.a {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .normal.b {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .normal.c {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .normal.d {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .normal.e {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .normal.f {
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .normal.g {
+    grid-area: 3 / 3 / 4 / 4;
+  }
 }
 
 @media (max-width: 690px) {
